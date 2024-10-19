@@ -1,0 +1,78 @@
+nodes:
+  - id: 2yu85kuJN8D2SzrMtzYKf
+    type: code_generation
+    position:
+      x: 1572.5
+      'y': 621
+    data:
+      id: 2yu85kuJN8D2SzrMtzYKf
+      title: Generate Code
+      prompt: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      apiKey: OPENAI_API_KEY
+      engineName: openai-gpt
+      modelName: echo-ie
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 212
+    height: 466
+    selected: false
+    positionAbsolute:
+      x: 1572.5
+      'y': 621
+    dragging: false
+  - id: nHjSjhYNkErQRW3ytNHYj
+    type: file
+    position:
+      x: 1573.6886248786598
+      'y': 296.9738484286318
+    data:
+      id: nHjSjhYNkErQRW3ytNHYj
+      title: Data
+      fileName: handbag_sales_data.csv
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 210
+    height: 250
+    selected: false
+    dragging: false
+    positionAbsolute:
+      x: 1573.6886248786598
+      'y': 296.9738484286318
+  - id: 6qSLQnl7mGcqevQGH-B8V
+    type: python_code
+    position:
+      x: 1919.3152004187418
+      'y': 680.2079198460079
+    data:
+      id: 6qSLQnl7mGcqevQGH-B8V
+      title: Chat Markdown
+      module: chat_markdown.py
+      outputType: overwrite
+      outputToCanvas: false
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 210
+    height: 348
+    selected: false
+    dragging: false
+    positionAbsolute:
+      x: 1919.3152004187418
+      'y': 680.2079198460079
+edges:
+  - source: 2yu85kuJN8D2SzrMtzYKf
+    sourceHandle: r
+    target: 6qSLQnl7mGcqevQGH-B8V
+    targetHandle: l
+    id: V4ZG54
+  - source: nHjSjhYNkErQRW3ytNHYj
+    sourceHandle: b
+    target: 2yu85kuJN8D2SzrMtzYKf
+    targetHandle: t
+    id: tlfF91
+description: null
