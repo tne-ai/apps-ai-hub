@@ -14,10 +14,7 @@ nodes:
       apiKey: OPENAI_API_KEY
       engineName: openai-gpt
       modelName: echo-ie
-      flowState:
-        backend: git
-        repo: apps-ai-hub
-    width: 214
+    width: 212
     height: 466
     selected: false
     positionAbsolute:
@@ -36,7 +33,7 @@ nodes:
       flowState:
         backend: git
         repo: apps-ai-hub
-    width: 212
+    width: 210
     height: 250
     selected: false
     dragging: false
@@ -57,7 +54,7 @@ nodes:
       flowState:
         backend: git
         repo: apps-ai-hub
-    width: 212
+    width: 210
     height: 348
     selected: false
     dragging: false
@@ -73,7 +70,7 @@ nodes:
       id: rBpM3Fb8lSA3va9PFBiON
       title: Chat
       input: ''
-      slashgptManifest: chat explain brief.model
+      slashgptManifest: echo-chat.model
       toolJson: ''
       toolCode: ''
       outputType: overwrite
@@ -101,9 +98,9 @@ nodes:
             git: >-
               https://api.github.com/repos/tne-ai/apps-ai-hub/git/blobs/59e108fd6313037d4fdc032ab94af28350eab060
             html: https://github.com/tne-ai/apps-ai-hub/blob/main/Experts/Echo%20IE
-    width: 212
-    height: 490
-    selected: true
+    width: 210
+    height: 466
+    selected: false
     dragging: false
     positionAbsolute:
       x: 2322.3216529117835
