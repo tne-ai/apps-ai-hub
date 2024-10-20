@@ -18,37 +18,12 @@ nodes:
         backend: git
         repo: apps-ai-hub
     width: 212
-    height: 426
+    height: 466
     selected: false
     dragging: false
     positionAbsolute:
       x: 755.9861056262796
       'y': 286.793678218548
-  - id: 5izJLYjhd8RGuJPaJpxxJ
-    type: llm
-    position:
-      x: 755.6763374667321
-      'y': 759.4759103255119
-    data:
-      id: 5izJLYjhd8RGuJPaJpxxJ
-      title: Groq Llama
-      input: ''
-      slashgptManifest: groqllama.model
-      toolJson: ''
-      toolCode: ''
-      outputType: overwrite
-      outputToCanvas: false
-      useUserQuery: true
-      flowState:
-        backend: git
-        repo: apps-ai-hub
-    width: 212
-    height: 426
-    selected: false
-    positionAbsolute:
-      x: 755.6763374667321
-      'y': 759.4759103255119
-    dragging: false
   - id: 6y29e1rAtP3fjXjuQS5AJ
     type: llm
     position:
@@ -68,21 +43,93 @@ nodes:
         backend: git
         repo: apps-ai-hub
     width: 212
-    height: 426
-    selected: true
+    height: 466
+    selected: false
     positionAbsolute:
       x: 1235.4345529811626
       'y': 756.481219383584
     dragging: false
+  - id: IFydHUqGZa87B4IbgOJ7U
+    type: llm
+    position:
+      x: 755.641204332358
+      'y': 786.2465811687925
+    data:
+      id: IFydHUqGZa87B4IbgOJ7U
+      title: GPT-4-Turbo
+      input: ''
+      slashgptManifest: gpt-4-turbo.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      flowState: &ref_0
+        backend: git
+        repo: apps-ai-hub
+        content:
+          name: Jury
+          path: Experts/Jury
+          sha: 4449fa238278bddee8c99dc2dba72866fd278d84
+          size: 1974
+          url: >-
+            https://api.github.com/repos/tne-ai/apps-ai-hub/contents/Experts/Jury?ref=main
+          html_url: https://github.com/tne-ai/apps-ai-hub/blob/main/Experts/Jury
+          git_url: >-
+            https://api.github.com/repos/tne-ai/apps-ai-hub/git/blobs/4449fa238278bddee8c99dc2dba72866fd278d84
+          download_url: >-
+            https://raw.githubusercontent.com/tne-ai/apps-ai-hub/main/Experts/Jury
+          type: file
+          _links:
+            self: >-
+              https://api.github.com/repos/tne-ai/apps-ai-hub/contents/Experts/Jury?ref=main
+            git: >-
+              https://api.github.com/repos/tne-ai/apps-ai-hub/git/blobs/4449fa238278bddee8c99dc2dba72866fd278d84
+            html: https://github.com/tne-ai/apps-ai-hub/blob/main/Experts/Jury
+    width: 212
+    height: 466
+    selected: false
+    dragging: false
+    positionAbsolute:
+      x: 755.641204332358
+      'y': 786.2465811687925
+  - id: mfqL1Tv3BRBw_J-PV9tp3
+    type: llm
+    position:
+      x: 759.1143580433923
+      'y': 1282.3335732799246
+    data:
+      id: mfqL1Tv3BRBw_J-PV9tp3
+      title: GPT-4
+      input: ''
+      slashgptManifest: gpt-4o.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      flowState: *ref_0
+    width: 212
+    height: 466
+    selected: false
+    dragging: false
+    positionAbsolute:
+      x: 759.1143580433923
+      'y': 1282.3335732799246
 edges:
+  - source: mfqL1Tv3BRBw_J-PV9tp3
+    sourceHandle: r
+    target: 6y29e1rAtP3fjXjuQS5AJ
+    targetHandle: l
+    id: P6jV3a
+  - source: IFydHUqGZa87B4IbgOJ7U
+    sourceHandle: r
+    target: 6y29e1rAtP3fjXjuQS5AJ
+    targetHandle: l
+    id: Y-zpdo
   - source: dBvi6HXDz-fh7rU3_xDMG
     sourceHandle: r
     target: 6y29e1rAtP3fjXjuQS5AJ
     targetHandle: l
     id: 64OszN
-  - source: 5izJLYjhd8RGuJPaJpxxJ
-    sourceHandle: r
-    target: 6y29e1rAtP3fjXjuQS5AJ
-    targetHandle: l
-    id: muDx4H
 description: null
