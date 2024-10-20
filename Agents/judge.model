@@ -1,9 +1,9 @@
 agent: openAIAgent
 params:
-  model: gpt-4-turbo
+  model: gpt-4o
   max_tokens: 500
   temperature: 0
-  mergeableSystem: >-
+  prompt: |
     You'll be given several different responses from different LLMs. For each
     response, you must output it verbatim, assign a confidence score for its
     accuracy and explain your reasoning behind the score you gave. Follow the
@@ -45,8 +45,3 @@ params:
     Reasoning
 
     {SHORT EXPLANATION FOR WHY THIS MODEL WAS BEST}
-  stream: true
-passThrough:
-  nodeType: openAI
-  nodeTitle: judge
-  database: ''
