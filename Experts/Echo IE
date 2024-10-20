@@ -17,7 +17,7 @@ nodes:
       flowState:
         backend: git
         repo: apps-ai-hub
-    width: 212
+    width: 214
     height: 466
     selected: false
     positionAbsolute:
@@ -36,7 +36,7 @@ nodes:
       flowState:
         backend: git
         repo: apps-ai-hub
-    width: 210
+    width: 212
     height: 250
     selected: false
     dragging: false
@@ -57,14 +57,63 @@ nodes:
       flowState:
         backend: git
         repo: apps-ai-hub
-    width: 210
+    width: 212
     height: 348
     selected: false
     dragging: false
     positionAbsolute:
       x: 1919.3152004187418
       'y': 680.2079198460079
+  - id: rBpM3Fb8lSA3va9PFBiON
+    type: llm
+    position:
+      x: 2322.3216529117835
+      'y': 612.2051857606756
+    data:
+      id: rBpM3Fb8lSA3va9PFBiON
+      title: Chat
+      input: ''
+      slashgptManifest: chat explain brief.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+        content:
+          name: Echo IE
+          path: Experts/Echo IE
+          sha: 59e108fd6313037d4fdc032ab94af28350eab060
+          size: 1740
+          url: >-
+            https://api.github.com/repos/tne-ai/apps-ai-hub/contents/Experts/Echo%20IE?ref=main
+          html_url: https://github.com/tne-ai/apps-ai-hub/blob/main/Experts/Echo%20IE
+          git_url: >-
+            https://api.github.com/repos/tne-ai/apps-ai-hub/git/blobs/59e108fd6313037d4fdc032ab94af28350eab060
+          download_url: >-
+            https://raw.githubusercontent.com/tne-ai/apps-ai-hub/main/Experts/Echo%20IE
+          type: file
+          _links:
+            self: >-
+              https://api.github.com/repos/tne-ai/apps-ai-hub/contents/Experts/Echo%20IE?ref=main
+            git: >-
+              https://api.github.com/repos/tne-ai/apps-ai-hub/git/blobs/59e108fd6313037d4fdc032ab94af28350eab060
+            html: https://github.com/tne-ai/apps-ai-hub/blob/main/Experts/Echo%20IE
+    width: 212
+    height: 490
+    selected: true
+    dragging: false
+    positionAbsolute:
+      x: 2322.3216529117835
+      'y': 612.2051857606756
 edges:
+  - source: 6qSLQnl7mGcqevQGH-B8V
+    sourceHandle: r
+    target: rBpM3Fb8lSA3va9PFBiON
+    targetHandle: l
+    id: grS6pM
   - source: 2yu85kuJN8D2SzrMtzYKf
     sourceHandle: r
     target: 6qSLQnl7mGcqevQGH-B8V
