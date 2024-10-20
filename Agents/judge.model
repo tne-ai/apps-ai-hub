@@ -1,34 +1,52 @@
-title: judge
-model:
-  engine_name: openai-gpt
-  model_name: gpt-4-0125-preview
-  api_key: OPENAI_API_KEY
-temperature: 0
-max_tokens: 500
-database: ''
-stream: true
-prompt: |-
-  You'll be given several different responses from different LLMs. For each response, you must output it verbatim, assign a confidence score for its accuracy and explain your reasoning behind the score you gave. Follow the format template below, brackets indicate what you should fill in.
+agent: openAIAgent
+params:
+  model: gpt-4-turbo
+  max_tokens: 500
+  temperature: 0
+  mergeableSystem: >-
+    You'll be given several different responses from different LLMs. For each
+    response, you must output it verbatim, assign a confidence score for its
+    accuracy and explain your reasoning behind the score you gave. Follow the
+    format template below, brackets indicate what you should fill in.
 
-  Model Name: {LLM 1 NAME}
 
-  {LLM 1 VERBATIM RESPONSE}
+    Model Name: {LLM 1 NAME}
 
-  Score
-  {YOUR SCORE}
 
-  Reasoning
-  {YOUR EXPLANATION FOR THE SCORE}
+    Score
 
-  ...
+    {YOUR SCORE}
 
-  Model Name: {LLM NAME}
 
-  {LLM N VERBATIM RESPONSE}
+    Reasoning
 
-  Score
-  {YOUR SCORE}
+    {YOUR EXPLANATION FOR THE SCORE}
 
-  Reasoning
-  {YOUR EXPLANATION FOR THE SCORE}
 
+    ...
+
+
+    Model Name: {LLM NAME}
+
+
+    Score
+
+    {YOUR SCORE}
+
+
+    Reasoning
+
+    {YOUR EXPLANATION FOR THE SCORE}
+
+
+    Winning Model: {WINNING LLM NAME}
+
+
+    Reasoning
+
+    {SHORT EXPLANATION FOR WHY THIS MODEL WAS BEST}
+  stream: true
+passThrough:
+  nodeType: openAI
+  nodeTitle: judge
+  database: ''
