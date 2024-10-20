@@ -14,7 +14,7 @@ nodes:
       apiKey: OPENAI_API_KEY
       engineName: openai-gpt
       modelName: echo-ie
-    width: 212
+    width: 214
     height: 466
     selected: false
     positionAbsolute:
@@ -33,7 +33,7 @@ nodes:
       flowState:
         backend: git
         repo: apps-ai-hub
-    width: 210
+    width: 212
     height: 250
     selected: false
     dragging: false
@@ -54,7 +54,7 @@ nodes:
       flowState:
         backend: git
         repo: apps-ai-hub
-    width: 210
+    width: 212
     height: 348
     selected: false
     dragging: false
@@ -98,9 +98,9 @@ nodes:
             git: >-
               https://api.github.com/repos/tne-ai/apps-ai-hub/git/blobs/59e108fd6313037d4fdc032ab94af28350eab060
             html: https://github.com/tne-ai/apps-ai-hub/blob/main/Experts/Echo%20IE
-    width: 210
+    width: 212
     height: 466
-    selected: true
+    selected: false
     dragging: false
     positionAbsolute:
       x: 2322.3216529117835
