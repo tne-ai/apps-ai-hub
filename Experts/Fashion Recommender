@@ -1,0 +1,177 @@
+nodes:
+  - id: UQnPM6-2-Ct2bqFQ5Ys4U
+    type: llm
+    position:
+      x: 557.3119960695009
+      'y': 486.39760347034644
+    data:
+      id: UQnPM6-2-Ct2bqFQ5Ys4U
+      title: Analyzing Fashion Photos...
+      input: ''
+      slashgptManifest: fashion-description.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 212
+    height: 514
+    selected: false
+    positionAbsolute:
+      x: 557.3119960695009
+      'y': 486.39760347034644
+    dragging: false
+  - id: w9o09b02aYJ1E5hoy9ww4
+    type: out
+    position:
+      x: 922.1366402326669
+      'y': 1175.9222804075312
+    data:
+      id: w9o09b02aYJ1E5hoy9ww4
+      title: Save File
+      outputName: fashion-recommender-out.txt
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 212
+    height: 214
+    selected: false
+    positionAbsolute:
+      x: 922.1366402326669
+      'y': 1175.9222804075312
+    dragging: false
+  - id: Tk0Z_9nkGYhB6FK-GG8vG
+    type: debug
+    position:
+      x: 573.922200385204
+      'y': 1190.0510593075644
+    data:
+      id: Tk0Z_9nkGYhB6FK-GG8vG
+      title: Prompt Debugger
+      outputName: fashion-recommendor-in.txt
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 212
+    height: 214
+    selected: false
+    positionAbsolute:
+      x: 573.922200385204
+      'y': 1190.0510593075644
+    dragging: false
+  - id: dSQ3IwvJHkYRMNCPDHqWq
+    type: llm
+    position:
+      x: 1149.7336934190714
+      'y': 548.3566142222096
+    data:
+      id: dSQ3IwvJHkYRMNCPDHqWq
+      title: Generating recommended images...
+      input: ''
+      slashgptManifest: fashion-image-generator.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 249
+    height: 514
+    selected: true
+    positionAbsolute:
+      x: 1149.7336934190714
+      'y': 548.3566142222096
+    dragging: false
+  - id: l4uxHyHN6RvDgcA4wC0JV
+    type: file
+    position:
+      x: 417.34132147114804
+      'y': -122.63467089241009
+    data:
+      id: l4uxHyHN6RvDgcA4wC0JV
+      title: Data
+      fileName: trang_1.jpg
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 263
+    height: 426
+    selected: false
+    dragging: false
+    positionAbsolute:
+      x: 417.34132147114804
+      'y': -122.63467089241009
+  - id: HmbdocoARZOjqYHF3C3fm
+    type: file
+    position:
+      x: 717.8678496250511
+      'y': -110.78144285682649
+    data:
+      id: HmbdocoARZOjqYHF3C3fm
+      title: Data
+      fileName: trang_2.jpg
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 263
+    height: 426
+    selected: false
+    positionAbsolute:
+      x: 717.8678496250511
+      'y': -110.78144285682649
+    dragging: false
+  - id: RnSKvNfwTPZECAffNpSTt
+    type: file
+    position:
+      x: 1016.5772783031903
+      'y': -129.06297207255878
+    data:
+      id: RnSKvNfwTPZECAffNpSTt
+      title: Data
+      fileName: trang_3.jpg
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 263
+    height: 426
+    selected: false
+    dragging: false
+    positionAbsolute:
+      x: 1016.5772783031903
+      'y': -129.06297207255878
+edges:
+  - source: RnSKvNfwTPZECAffNpSTt
+    sourceHandle: b
+    target: UQnPM6-2-Ct2bqFQ5Ys4U
+    targetHandle: t
+    id: rd4uYX
+  - source: HmbdocoARZOjqYHF3C3fm
+    sourceHandle: b
+    target: UQnPM6-2-Ct2bqFQ5Ys4U
+    targetHandle: t
+    id: 8fhGcN
+  - source: l4uxHyHN6RvDgcA4wC0JV
+    sourceHandle: b
+    target: UQnPM6-2-Ct2bqFQ5Ys4U
+    targetHandle: t
+    id: IKhPbD
+  - source: UQnPM6-2-Ct2bqFQ5Ys4U
+    sourceHandle: r
+    target: dSQ3IwvJHkYRMNCPDHqWq
+    targetHandle: l
+    id: jDwik3
+  - id: POb2Al
+    source: UQnPM6-2-Ct2bqFQ5Ys4U
+    sourceHandle: b
+    target: Tk0Z_9nkGYhB6FK-GG8vG
+    targetHandle: t
+  - id: 9BbfOQ
+    source: UQnPM6-2-Ct2bqFQ5Ys4U
+    sourceHandle: b
+    target: w9o09b02aYJ1E5hoy9ww4
+    targetHandle: t
