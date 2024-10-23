@@ -1,0 +1,11 @@
+title: tne-fashion-customer-vision-description.model
+model:
+  engine_name: openai-gpt
+  model_name: gpt-4o
+  api_key: OPENAI_API_KEY
+temperature: 0
+max_tokens: 500
+database: ''
+stream: true
+prompt: |
+  You received photos of people wearing clothes. You need to accurately describe the clothing, with emphasis on style, cut and color. Describe the background scene and style
