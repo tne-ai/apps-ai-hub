@@ -2,13 +2,13 @@ nodes:
   - id: 0UbWHvuWCWFN7Tk-hCmvF
     type: llm
     position:
-      x: 496
-      'y': 372
+      x: 495.48326612903224
+      'y': 370.9665322580645
     data:
       id: 0UbWHvuWCWFN7Tk-hCmvF
       title: New Model
       input: ''
-      slashgptManifest: ''
+      slashgptManifest: fashion-description.model
       toolJson: ''
       toolCode: ''
       outputType: overwrite
@@ -18,6 +18,11 @@ nodes:
         backend: git
         repo: apps-ai-hub
     width: 212
-    height: 466
+    height: 490
+    selected: true
+    positionAbsolute:
+      x: 495.48326612903224
+      'y': 370.9665322580645
+    dragging: false
 edges: []
 description: null
