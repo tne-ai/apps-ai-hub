@@ -1,19 +1,23 @@
 nodes:
-  - id: 871WEhAWYmYWppfBU63uV
-    type: python_code
+  - id: 0UbWHvuWCWFN7Tk-hCmvF
+    type: llm
     position:
       x: 496
       'y': 372
     data:
-      id: 871WEhAWYmYWppfBU63uV
-      title: New Code
-      module: ''
+      id: 0UbWHvuWCWFN7Tk-hCmvF
+      title: New Model
+      input: ''
+      slashgptManifest: ''
+      toolJson: ''
+      toolCode: ''
       outputType: overwrite
       outputToCanvas: false
+      useUserQuery: false
       flowState:
         backend: git
         repo: apps-ai-hub
     width: 212
-    height: 348
+    height: 466
 edges: []
 description: null
