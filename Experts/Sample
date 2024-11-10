@@ -1,0 +1,19 @@
+nodes:
+  - id: Lg1MK2zLnSQbHhVr8y-WK
+    type: proc
+    position:
+      x: 744
+      'y': 372
+    data:
+      id: Lg1MK2zLnSQbHhVr8y-WK
+      title: New Expert
+      proc: ''
+      outputType: overwrite
+      outputToCanvas: false
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 241
+    height: 346
+edges: []
+description: null
