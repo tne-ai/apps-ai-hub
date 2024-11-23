@@ -1,0 +1,28 @@
+nodes:
+  - id: '-OIv2GLn2w16L3T_VgUrV'
+    type: llm
+    position:
+      x: 703.2355264758964
+      'y': 355.98128323958446
+    data:
+      id: '-OIv2GLn2w16L3T_VgUrV'
+      title: Openrouter
+      input: ''
+      slashgptManifest: openrouter.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      flowState:
+        backend: git
+        repo: apps-ai-hub
+    width: 212
+    height: 466
+    selected: true
+    positionAbsolute:
+      x: 703.2355264758964
+      'y': 355.98128323958446
+    dragging: false
+edges: []
+description: null
