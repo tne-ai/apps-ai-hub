@@ -1,6 +1,6 @@
 title: Gemini
 model:
-  engine_name: openai-gpt
+  engine_name: openrouter
   model_name: google/gemini-flash-1.5-8b-exp
   api_key: OPENROUTER_API_KEY
 temperature: 0
